@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = '';
+	public $baseURL;
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -449,6 +449,6 @@ class App extends BaseConfig
 	public function __construct() {
         parent::__construct();
 
-        $baseURL = getenv('app.baseURL'); 
+        $baseURL = getenv('baseURL'); 
     }
 }
