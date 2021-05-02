@@ -10,9 +10,10 @@ class Page extends BaseController
         	throw new \CodeIgniter\Exceptions\PageNotFoundException($page);
     	}
 
-    	//$data['title'] = ucfirst($page); // Capitalize the first letter
+    	$data['title'] = ucfirst($page);
+		$data['showSecondary'] = true;
 
     	
-		return view('pages/'.$page);
+		return view('pages/'.$page, $data);
 	}
 }
