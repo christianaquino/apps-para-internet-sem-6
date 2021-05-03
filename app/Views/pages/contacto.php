@@ -1,16 +1,17 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
-<div class="container">
-    <div class="field">
+<div class="container m-3">
+<form action="" method="POST">
+<div class="field">
     <label class="label">Nombre</label>
     <div class="control">
-        <input class="input" type="text" placeholder="Text input">
+        <input class="input" type="text" name="nombre" placeholder="Ingrese su nombre">
     </div>
     </div>
     <div class="field">
     <label class="label">Email</label>
     <div class="control has-icons-left has-icons-right">
-        <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+        <input class="input is-danger" type="email" name="email" placeholder="Ingrese su email" value="">
         <span class="icon is-small is-left">
         <i class="fas fa-envelope"></i>
         </span>
@@ -23,7 +24,7 @@
     <div class="field">
     <label class="label">Mensaje</label>
     <div class="control">
-        <textarea class="textarea" placeholder="Textarea"></textarea>
+        <textarea class="textarea" name="mensaje" placeholder="Ingrese su mensaje"></textarea>
     </div>
     </div>
 
@@ -36,4 +37,5 @@
     </div>
     </div>
 </div>
+</form>
 <?= $this->endSection() ?>

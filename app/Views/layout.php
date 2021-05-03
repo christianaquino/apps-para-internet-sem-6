@@ -37,7 +37,7 @@
                         </a>
                     </p>
                     <p class="control">
-                        <a class="button is-primary" href="">
+                        <a class="button is-primary" href="<?=site_url('signup/index') ?>">
                             <span class="icon">
                                 <i class="fas fa-user"></i>
                             </span>
