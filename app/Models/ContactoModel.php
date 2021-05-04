@@ -10,5 +10,4 @@ class ContactoModel extends Model
     protected $allowedFields = [
         'nombre', 'email', 'mensaje'
     ];
-    //protected $returnType    = 'App\Entities\Contacto';
 }
