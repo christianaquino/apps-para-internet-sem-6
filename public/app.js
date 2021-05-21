@@ -35,9 +35,16 @@ const readMore = (e, newsItemId) => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  //getSection("_inicio.html");
+const showPassword = (element, targetId) => {
+  targetElement = document.getElementById(targetId);
+  if (element.checked) {
+    targetElement.type = "text";
+  } else {
+    targetElement.type = "password";
+  }
+};
 
+document.addEventListener("DOMContentLoaded", () => {
   const $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
     0
