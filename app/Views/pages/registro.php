@@ -19,6 +19,7 @@
                             type="text" 
                             placeholder="Ingrese su nombre"
                             value="<?php if(isset($data['nombre'])) { echo $data['nombre']; }?>"
+                            maxlength="45"
                             required
                         >
                     </div>
@@ -33,6 +34,7 @@
                             name="apellido" 
                             placeholder="Ingrese su apellido"
                             value="<?php if(isset($data['apellido'])) { echo $data['apellido']; }?>"
+                            maxlength="45"
                             required
                         >
                     </div>
@@ -47,6 +49,7 @@
                             name="email" 
                             placeholder="Ingrese su email" 
                             value="<?php if(isset($data['email'])) { echo $data['email']; }?>"
+                            maxlength="45"
                             required
                         >
                         <span class="icon is-small is-left">
@@ -71,6 +74,7 @@
                             placeholder="Ingrese una contraseña"
                             value="<?php if(isset($data['password'])) { echo $data['password']; }?>"
                             id="password"
+                            maxlength="45"
                             required
                         >
                         <span class="icon is-small is-left">

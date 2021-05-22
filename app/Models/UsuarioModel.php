@@ -11,10 +11,10 @@ class UsuarioModel extends Model
         'tipo_usuario_id', 'nombre', 'apellido', 'email', 'password'
     ];
     protected $validationRules    = [
-        'nombre' => 'required',
-        'apellido' => 'required',
-        'email'        => 'required|valid_email|is_unique[usuario.email]',
-        'password' => 'required'
+        'nombre' => 'required|max_length[45]',
+        'apellido' => 'required|max_length[45]',
+        'email'        => 'required|valid_email|is_unique[usuario.email]|max_length[45]',
+        'password' => 'required|max_length[45]'
     ];
     
     protected $validationMessages = [
